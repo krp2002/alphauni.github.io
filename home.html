@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="dirmsg.html">DIRECTOR'S MASSAGE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="aim.html">AIM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Alpha University</h1>
+            <p>A dream collage is pictures of your goals.</p>
+            <a href="contact.html" class="hero-btn">Visit Us to Know more</a>
+        </div>
+    </section>
+
+    <!-- for the courses -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Education is power</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>B.Tech</h3>
+                <p>Bachelor of Technology (BTech) is a professional undergraduate engineering degree programme awarded to candidates after they complete four years of study in the field. Engineering is one of the most popular courses in India.</p>
+            </div>
+            <div class="course-col">
+                <h3>M.Tech</h3>
+                <p>MTech is a professional postgraduate engineering master degree programme awarded to candidates after completion of two years of study in the discipline of engineering. This degree is predicated in a specific branch of engineering. In India, the ME/MTech degree is offered across various specializations.</p>
+            </div>
+            <div class="course-col">
+                <h3>Ph.D</h3>
+                <p>A Ph.D., or Doctor of Philosophy, is a high-level degree earned after a period of three or more years of graduate-level study, culminating in the creation, submission, presentation and defense of a research dissertation.The Ph.D. can be awarded in a wide variety of fields, including the sciences, engineering and humanities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- for campus -->
+    <section class="campus">
+        <h1>Our Campuses</h1>
+        <p>V Stands Togather</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/infra.jpg">
+                <div class="layer">
+                    <h3>Ahmedabad <br> Gujarat</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/ftrimg.jpg">
+                <div class="layer">
+                    <h3>Mumbai <br> Maharashtra</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/campus.jpg">
+                <div class="layer">
+                    <h3>Bengaluru <br> Karnataka</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>An investment in the Knowledge always pays the best intrest.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg" alt="">
+                <h3>Library</h3>
+                <p>When in doubt go to the library.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/gym.jpg" alt="">
+                <h3>Gym</h3>
+                <p>It hurts now but one day it will be your warm up.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/infra.jpg" alt="">
+                <h3>Infrastructure</h3>
+                <p>Infrastructure sector is all about bulding assets for the country. It is part of nation bulding.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- for call to action -->
+    <section class="cta">
+        <h1>Enrol for our various online courses<br>Anywhere from the world</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- for the footer -->
+    <section class="footer">
+        <img src="images/logo.png" class="ftlogo">
+        <p>Mahatma Gandhi Road, Nr. National Cricket Club<br> Mumbai, Maharashtra, 400032.</p>
+        <br>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/krunal-patel-071454239" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/KrunalP41759821?t=pFzdMcZgkbaBUtibgRFO-w&s=08" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/krunal_patel_6822?utm_source=qr" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <br>
+        <p class="krp">Made by<a href="https://github.com/krp2002" target="_blank" style="color:lightgreen"> Krunal Patel</a>   </p>
+        <br>
+    </section>
+
+
+    <!-- java script for user menu toggle -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

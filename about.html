@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="dirmsg.html">DIRECTOR'S MASSAGE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="aim.html">AIM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+
+    <!-- about us data -->
+   
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Alpha University</h1>
+                <h1 style="font-size: 25px;">Bengaluru</h1>
+                <P>The Alpha University (Bengaluru) established in 2005, with a vision to assist higher education and provide excellent educational facilities to the younger generation of India.</P>
+                <a href="home.html" class="hero-btn red-btn">EXPLOR NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/campus.jpg" alt="">
+            </div>
+        </div>
+    </section>
+   
+    <!-- for the footer -->
+    <section class="footer">
+        <img src="images/logo.png" class="ftlogo">
+        <p>Mahatma Gandhi Road, Nr. National Cricket Club<br> Mumbai, Maharashtra, 400032.</p>
+        <br>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/krunal-patel-071454239" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/KrunalP41759821?t=pFzdMcZgkbaBUtibgRFO-w&s=08" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/krunal_patel_6822?utm_source=qr" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <br>
+        <p class="krp">Made by<a href="https://github.com/krp2002" target="_blank" style="color:lightgreen"> Krunal Patel</a>   </p>
+        <br>
+    </section>
+
+
+
+    <!-- java script for user menu toggle -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

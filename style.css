@@ -1,0 +1,633 @@
+
+/* FOR ALL HTML ELEMENT */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* for section part */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/infra.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* FOR NAVIGATION BAR */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+/* for phone view nav bar height */
+@media(max-width : 700px){
+    nav{
+        height: 90px;
+    }
+}
+/* for logo image */
+nav img{
+    width: 150px; 
+    opacity: 0.6;
+}
+
+/* for div */
+.nav-links{
+    flex : 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* for phone view hover */
+@media(max-width : 700px){
+    
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after{
+        width: 100%;
+        position: absolute;
+    }
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* for most of btns */
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width : 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }  
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/* for the course */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.2);
+}    
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* for campus class */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 350px;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* for the facilities */
+
+.facilities{
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* for director msg */
+
+.director{
+    width: 100%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    background: url(images/dirmsgback.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.director-msg{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.director-msg img{
+    width: 150%;
+    border-radius: 100%;
+    border:5px solid #fdf8f8;
+}
+
+.director-msg h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 35px;
+    color: rgb(232, 216, 216);
+    width: 120px;
+    font-size: 25px;
+}
+
+.director-msg p{
+    color: black;
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+.dir-msg p{
+    text-align: relative;
+    width: 75%;
+    margin-left: 170px;
+    color: black;
+    background-color: #fff;
+    opacity: 0.65;
+    border-radius: 10px;
+}
+
+/* for director msg for phone view */
+@media(max-width : 700px){
+    .director-msg img{
+        margin-left: auto;
+        width: 200px;
+    }
+    .director-msg h3{
+        text-align: center;
+        margin-left: 25px;
+        width: 150px;
+        color: #fff;
+    }
+    .director-msg p{
+        text-align: center;
+        margin-left: 22px;
+        width: 150px;
+        color: #fff;
+    }
+
+    .dir-msg p{
+        text-align: center; 
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* FOR CALL TO ACTION */
+.cta{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/campus.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0%;
+}
+
+/* for cta phone view */
+@media(max-width : 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* for footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    border-top: 4px solid rgba(89 19 19);
+    background: url(images/ftr.jpg);
+    background-size: cover;
+}
+
+.footer p{
+    text-align: center;
+    color: #fff;
+    width: 35%;
+    background-color: rgb(89, 19, 19);
+    border-radius: 10px;
+    opacity: 0.75;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width : 700px){
+    .footer p{
+        width: 180px;
+    }
+}
+
+.icons .fa{
+    color: #f44336;
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 10px 0;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.65;
+    
+}
+
+.icons .fa:hover{
+    color: #fff;
+    background-color: #f44336;
+}
+
+.krp{
+    color: #fff;
+}
+
+.ftlogo{
+    width: 150px;
+    position: relative;
+    top: -3.4rem;
+    padding: 0;
+    border-radius: 100%;
+    border: 4px solid rgba(89 19 19);
+}
+
+.au{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* for about us page */
+
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/infra.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color: #fff;
+}
+
+.cour-col{
+    padding: 10px;
+}
+
+.cour-col ul{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    
+}
+.cour-col ul:hover{
+    color: red;
+}
+
+.btech{
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btech li{
+    margin-left: 12px;
+    margin-top: 5.5px;
+}
+
+.btech h3 {
+    opacity: 0;
+    pointer-events: none;
+    font-size: 0px;
+}
+
+.btech:hover h3{
+    font-weight: 600;
+    font-size: 15px;
+    bottom: 0;
+    margin-top: 6px;
+    margin-left: 18px;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgb(176, 192, 208);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* for contact page */
+
+.gandhinagar-con{
+    width: 100%;
+    padding-top: 600px;
+    margin: auto;
+    background: url(images/campus.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gandhinagar-col p{
+    text-align: center;
+    background-color: rgb(89, 19, 19);
+    padding: 10px;
+    opacity: 0.8;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+
+/* for aim-page */
+
+.aim-col{
+    background: url(images/aim.jpg);
+    background-position: center;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aim-col p{
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(89, 19, 19);
+    opacity: 0.75;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media(max-width : 700px){
+    .aim-col p{
+        width: 250px;
+        margin-left: -50px;
+    }
+}
+
+.consli{
+    background-color: rgb(89, 19, 19);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.consli p{
+    color: #fff;
+}
+

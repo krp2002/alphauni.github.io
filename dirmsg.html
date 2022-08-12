@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/Logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="dirmsg.html">DIRECTOR'S MASSAGE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="aim.html">AIM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Director Sir's Massage</h1>
+      
+    </section>
+
+
+   <!-- for the Director's massage -->
+   <section class="director">
+    <div class="row">
+        <div class="director-msg">
+            <img src="images/director.jpg">
+            <h3>Prof Calisto</h3>
+            <p>Director,<br>Alpha University</p>
+        </div>
+
+        <div class="dir-msg">
+            <p>Welcome to the Alpha University. The Ahmedabad and Mumbai campuses are a part of Alpha University(Bengaluru). Your four years of stay at these picturesque cities will be a memorable period of your life.<br><br> Alpha University campuses will provide you a beautiful environment for your studies. All technical and logical facilities are given to all the campuses. The academic curriculum and academic process will be the same. Within a couple of years master and doctoral students will join the campus to improve the academic ecosystem. I am confident your stay at these cities will be a memorable one in terms of academic pursuit and personality growth.<br><br>Welcome you again to the campus and wish you all the best for a new future.</p>
+        </div>
+    </div>
+</section>
+   
+    <!-- for the footer -->
+    <section class="footer">
+        <img src="images/logo.png" class="ftlogo">
+        <p>Mahatma Gandhi Road, Nr. National Cricket Club<br> Mumbai, Maharashtra, 400032.</p>
+        <br>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/krunal-patel-071454239" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/KrunalP41759821?t=pFzdMcZgkbaBUtibgRFO-w&s=08" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/krunal_patel_6822?utm_source=qr" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <br>
+        <p class="krp">Made by<a href="https://github.com/krp2002" target="_blank" style="color:lightgreen"> Krunal Patel</a>   </p>
+        <br>
+    </section>
+
+
+
+    <!-- java script for user menu toggle -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
